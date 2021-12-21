@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<input placeholder="Nhập bán kính hình tròn(cm)" oninput="dienTich_Chuvi(this.value)" style="width: 180px">
+<p>Diện tích hình tròn là: <span id="dientich"></span></p>
+<p>Chu vi hình tròn là:<span id="chuvi"></span></p>
+<script>
+    function dienTich_Chuvi(banKinh)
+    {
+        banKinh=parseFloat(banKinh)
+        document.getElementById('dientich').innerHTML= banKinh*banKinh*3.14+' (cm2)'
+        document.getElementById('chuvi').innerHTML=2*banKinh*3.14+' (cm)'
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra ký tự</title>
+</head>
+<body>
+<script>
+    let mang = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'a']
+    document.write(check(mang))
+
+    function check(a) {
+        let kytu = prompt('Nhập ký tự')
+        let dem = 0
+        for (i = 0; i < a.length; i++) {
+            if (kytu === a[i]) {
+                dem += 1
+            }``
+        }
+        return dem
+    }
+</script>
+</body>
+</html>

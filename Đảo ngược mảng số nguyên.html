@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược mảng số nguyên</title>
+</head>
+<body>
+<script>
+    let arr1 = [4, 1, 2, 5, 7, 10, 8]
+    document.write(daoNguocArr(arr1))
+
+    function daoNguocArr(a) {
+        let j = a.length - 1
+        let swap
+        for (let i = 0; i < j; i++) {
+                swap = a[i]
+                a[i] = a[j]
+                a[j] = swap
+                j--
+            }
+        return a
+        }
+
+        // a.reverse()
+        // return 'a'
+</script>
+</body>
+</html>

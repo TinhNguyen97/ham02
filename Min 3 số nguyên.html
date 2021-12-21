@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Min 3 số nguyên</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập a'))
+    let b = parseInt(prompt('Nhập b'))
+    let c = parseInt(prompt('Nhập c'))
+    let min = Min(a, b, c)
+    document.write(min)
+
+    function Min(a, b, c) {
+        // if (a < b) {
+        //     if (a < c) {
+        //         return a;
+        //     } else
+        //         return c;
+        // } else if (b < c) {
+        //     return b;
+        // } else
+        //     return c;
+        return (a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c);
+    }
+
+</script>
+</body>
+</html>

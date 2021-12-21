@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<input id='x' placeholder="Nhập x" type="number" oninput="tinhGiaithua(this.value)">
+<p>Giai thừa của <span id="ketqua"></span></p>
+<script>
+    function tinhGiaithua(x) {
+        x = parseInt(x)
+        if (x < 0) {
+            document.getElementById('ketqua').innerHTML =x+' không tồn tại'
+        } else {
+            let a = 1
+            for (i = 1; i <= x; i++) {
+                a *= i
+            }
+            document.getElementById('ketqua').innerHTML = x + ' là:' + x + '!= ' + a
+        }
+    }
+</script>
+</body>
+</html>

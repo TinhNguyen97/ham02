@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi chỗ 2 số nguyên</title>
+</head>
+<body>
+<script>
+    let num1 = parseInt(prompt("nhập số thứ nhất:"))
+    let num2 = parseInt(prompt("nhập số thứ hai:"))
+    document.write(swap(num1, num2))
+
+    function swap(a, b) {
+        let temp
+        temp = a
+        a = b
+        b = temp
+        return a + ',' + b
+    }
+</script>
+</body>
+</html>
